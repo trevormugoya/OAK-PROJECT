@@ -27,7 +27,7 @@ grep "^>NC_*" GCF_001633185.2_ValleyOak3.2_genomic.fna | head -n16 | awk -F " " 
 while read i; do
     echo "$i"
 
-    bioawk -c fastx -v chr="$i" '$name==chr{print ">"$name ; print $seq}' ../GCF_001633185.2_ValleyOak3.2_genomic.fna >> QL_reference.fa
+    bioawk -c fastx -v chr="$i" '$name==chr{print ">"$name ; print $seq}' GCF_001633185.2_ValleyOak3.2_genomic.fna >> QL_reference.fa
 
     echo "done"
 
