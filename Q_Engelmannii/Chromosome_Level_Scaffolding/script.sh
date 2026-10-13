@@ -18,7 +18,7 @@ ragtag.py scaffold -o QE-RAGTAG -t 16 GCF_001633185.2_ValleyOak3.2_genomic.fna G
 sed 's/_RagTag//' QE-RAGTAG/ragtag.scaffold.fasta > QE_rename.scaffold.fasta
 
 # extract chromosome contigs from reference
-grep "^>NC_*" GCF_001633185.2_ValleyOak3.2_genomic.fna | head -n16 | awk -F " " '{print $1}' > QL_chrlist
+grep "^>NC_*" GCF_001633185.2_ValleyOak3.2_genomic.fna | awk -F " " '{print $1}' > QL_chrlist
 
 # NOTE Remove ">" from the beginning of each line in QL_chrlist
 
