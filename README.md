@@ -5,3 +5,10 @@ This repository contains code associated with the curation of chromosome-level g
 Each species sub-directory contains the scripts for the main genome assembly as well as chloroplast isolation.
 
 Publications are currently in preparation and will be linked here when available.
+
+## Bioinformatic Tools.
+
+All bioinformatics tools used are defined in the [`envs`](envs/) sub-directory. 
+
+## References.
+WIP
