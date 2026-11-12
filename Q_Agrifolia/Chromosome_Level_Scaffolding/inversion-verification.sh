@@ -20,6 +20,6 @@ mamba activate bedtools
 bedtools intersect \
   -a SyRi-INV.vcf.gz \
   -b svim-INV.vcf.gz \
-  -f 0.50 \
+  -f 0.90 \
   -r \
-  -wa > common_INVL_pairs.vcf
+  -wao > common_INVL_pairs_wao_0.90.vcf
